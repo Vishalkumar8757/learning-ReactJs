@@ -1,4 +1,8 @@
 import Hook from "./component/Hook"
+import Back from "./Component/Back"
+import Map from "./Component/Map"
+import Counter from "./Component/Counter"
+import Photochange from "./Component/Photochange"
 function App(){
 
   function demo(a){
@@ -20,6 +24,11 @@ function App(){
     <button onDoubleClick={()=>heer(22)}>tap</button> <hr />
 
     <Hook/>
+    <Back/><hr />
+    <Map/> <hr />
+    <Counter/> <hr />
+    <Photochange/>
+
     
     </>
   )

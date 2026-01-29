@@ -7,12 +7,15 @@ function Hook(){
     function fun (){
         setnum("updated value is 30")
     }
+
+     
     return(
         <>
          <h1>Hook page ={num} </h1>
          <button onClick={fun}>change</button> <hr />
 
-         <button onClick={()=>setnum("update")}>tap</button>
+         <button onClick={()=>setnum("update")}>tap</button> <hr />
+
         </>
     )
 }
