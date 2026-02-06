@@ -1,4 +1,3 @@
- 
 
 import { useState } from "react"
 import Form from "./component/from"
@@ -6,7 +5,7 @@ import Form from "./component/from"
 function App(){
   // let [frmdata,setfrmdata]=useState()
   // function handledata(e){
-  //   // console.log(e.target.value) ye cansile pe print krme kle liye ha
+  //   // console.log(e.target.value) ye console pe print krme kle liye ha
   //   setfrmdata(e.target.value)
   // }
   // function submitfunction(e){
