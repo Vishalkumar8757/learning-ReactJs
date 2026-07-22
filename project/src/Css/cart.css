@@ -1,0 +1,56 @@
+.cart-container {
+  width: 80%;
+  margin: auto;
+}
+
+.cart-item {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.cart-item img {
+  width: 120px;
+}
+
+.details {
+  flex: 1;
+}
+
+.qty button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.remove {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.buy-btn {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+}
+
+.clear-btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.back-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 50px;
+}

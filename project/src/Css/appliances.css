@@ -1,0 +1,148 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  height: 80px;
+  width: 100%;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#logo {
+  width: 110px;
+  cursor: pointer;
+}
+
+.nav-item {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.nav-item img {
+  width: 36px;
+  transition: 0.2s;
+}
+
+.nav-item:hover img {
+  transform: scale(1.15);
+}
+
+.nav-item span {
+  display: block;
+  margin-top: 4px;
+}
+
+.search-box input {
+  width: 280px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.bag {
+  width: 34px;
+  cursor: pointer;
+}
+
+/* ================= PRODUCTS ================= */
+.products {
+  width: 90%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+}
+
+.product-card h4 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.rating {
+  color: #ffb400;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* ================= ADD TO CART ================= */
+.add-cart {
+  margin-top: 12px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ff9f00;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart:hover {
+  background: #fb641b;
+  color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .products {
+    width: 95%;
+  }
+}

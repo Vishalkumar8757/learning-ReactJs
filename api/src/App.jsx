@@ -12,7 +12,7 @@ function App(){
     <>
      <h1>This is app page</h1>
 
-     {
+     {/* {
         apidata.map((e) => (
           <> 
            <h1>{e.id}</h1>
@@ -21,7 +21,27 @@ function App(){
             <hr />
           </>
         ))
-      }
+      } */}
+
+        <table border="1" cellPadding="10" cellSpacing="0">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Body</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {apidata.map((e) => (
+            <tr key={e.id}>
+              <td>{e.id}</td>
+              <td>{e.title}</td>
+              <td>{e.body}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
      
     </>
   )
